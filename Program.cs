@@ -29,6 +29,11 @@ namespace DataStructures
 
             Console.WriteLine(browserTabs.GetCurrentPage()); //instagram
 
+            browserTabs.Forward();
+            browserTabs.Forward();
+            browserTabs.Forward();
+
+            Console.WriteLine(browserTabs.GetCurrentPage()); //
         }
     }
 }

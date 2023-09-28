@@ -9,17 +9,6 @@
         {
             Pages = new LinkedList<string>();
         }
-        //public void Run()
-        //{
-
-        //    pages.AddLast("youtube");
-        //    pages.AddLast("facebook");
-        //    pages.AddLast("instagram");
-        //    pages.AddLast("email");
-        //    pages.AddLast("azure");
-
-        //    NavigateTo("google");
-        //}
 
         public void NavigateTo(string page)
         {

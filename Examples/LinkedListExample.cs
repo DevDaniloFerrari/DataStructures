@@ -16,23 +16,14 @@
             ChangeCurrentPage();
         }
 
-        public string Forward()
+        public void Forward()
         {
-            if (CurrentPage == null)
-                return "There is no page to moving forward!";
-
-            CurrentPage = CurrentPage.Next;
-            return CurrentPage?.Value;
+            CurrentPage = CurrentPage?.Next;
         }
 
-        public string Backward()
+        public void Backward()
         {
-            if (CurrentPage == null)
-                return "There is no page to moving backward!";
-
-            CurrentPage = CurrentPage.Previous;
-            return CurrentPage?.Value;
-
+            CurrentPage = CurrentPage?.Previous;
         }
 
         private void ChangeCurrentPage()

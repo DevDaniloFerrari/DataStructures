@@ -3,7 +3,7 @@
     public class LinkedListExample
     {
         private LinkedList<string> Pages { get; set; }
-        private LinkedListNode<string> AtualPage { get; set; }
+        private LinkedListNode<string> CurrentPage { get; set; }
 
         public LinkedListExample()
         {
@@ -24,32 +24,37 @@
         public void NavigateTo(string page)
         {
             Pages.AddLast(page);
-            ChangeAtualPage();
+            ChangeCurrentPage();
         }
 
         public string Forward()
         {
-            if (AtualPage == null)
+            if (CurrentPage == null)
                 return "There is no page to moving forward!";
 
-            AtualPage = AtualPage.Next;
-            return AtualPage?.Value;
+            CurrentPage = CurrentPage.Next;
+            return CurrentPage?.Value;
         }
 
         public string Backward()
         {
-            if (AtualPage == null)
+            if (CurrentPage == null)
                 return "There is no page to moving backward!";
 
-            AtualPage = AtualPage.Previous;
-            return AtualPage?.Value;
+            CurrentPage = CurrentPage.Previous;
+            return CurrentPage?.Value;
 
         }
 
-        private void ChangeAtualPage()
+        private void ChangeCurrentPage()
         {
             var last = Pages.Last();
-            AtualPage = Pages.FindLast(last);
+            CurrentPage = Pages.FindLast(last);
+        }
+
+        public string GetCurrentPage()
+        {
+            return CurrentPage?.Value;
         }
     }
 }

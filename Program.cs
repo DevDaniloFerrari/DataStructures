@@ -6,34 +6,34 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            var browserTabs = new LinkedListExample();
+            var browserService = new BrowserService();
 
-            browserTabs.NavigateTo("youtube");
-            browserTabs.NavigateTo("facebook");
-            browserTabs.NavigateTo("instagram");
-            browserTabs.NavigateTo("email");
-            browserTabs.NavigateTo("azure");
+            browserService.NavigateTo("youtube");
+            browserService.NavigateTo("facebook");
+            browserService.NavigateTo("instagram");
+            browserService.NavigateTo("email");
+            browserService.NavigateTo("azure");
 
-            Console.WriteLine(browserTabs.GetCurrentPage()); //azure
+            Console.WriteLine(browserService.GetCurrentPage()); //azure
 
-            browserTabs.Backward();
+            browserService.Backward();
 
-            Console.WriteLine(browserTabs.GetCurrentPage()); //email
+            Console.WriteLine(browserService.GetCurrentPage()); //email
 
-            browserTabs.Backward();
-            browserTabs.Backward();
+            browserService.Backward();
+            browserService.Backward();
 
-            Console.WriteLine(browserTabs.GetCurrentPage()); //facebook
+            Console.WriteLine(browserService.GetCurrentPage()); //facebook
 
-            browserTabs.Forward();
+            browserService.Forward();
 
-            Console.WriteLine(browserTabs.GetCurrentPage()); //instagram
+            Console.WriteLine(browserService.GetCurrentPage()); //instagram
 
-            browserTabs.Forward();
-            browserTabs.Forward();
-            browserTabs.Forward();
+            browserService.Forward();
+            browserService.Forward();
+            browserService.Forward();
 
-            Console.WriteLine(browserTabs.GetCurrentPage()); //
+            Console.WriteLine(browserService.GetCurrentPage()); //
         }
     }
 }

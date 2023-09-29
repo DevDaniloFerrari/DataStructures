@@ -1,11 +1,11 @@
 ﻿namespace DataStructures.Examples
 {
-    public class LinkedListExample
+    public class BrowserService
     {
         private LinkedList<string> Pages { get; set; }
         private LinkedListNode<string> CurrentPage { get; set; }
 
-        public LinkedListExample()
+        public BrowserService()
         {
             Pages = new LinkedList<string>();
         }

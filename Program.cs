@@ -33,7 +33,7 @@ namespace DataStructures
             browserService.Forward();
             browserService.Forward();
 
-            Console.WriteLine(browserService.GetCurrentPage()); //
+            Console.WriteLine(browserService.GetCurrentPage()); //azure
         }
     }
 }

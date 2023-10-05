@@ -18,11 +18,17 @@
 
         public void Forward()
         {
+            if (CurrentPage?.Next == null)
+                return;
+
             CurrentPage = CurrentPage?.Next;
         }
 
         public void Backward()
         {
+            if (CurrentPage?.Previous == null)
+                return;
+
             CurrentPage = CurrentPage?.Previous;
         }
 

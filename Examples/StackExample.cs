@@ -8,5 +8,20 @@
         {
             Stack = new string[size];
         }
+
+        public void Push(string value)
+        {
+
+        }
+
+        public void Pop()
+        {
+
+        }
+
+        public void Peek()
+        {
+
+        }
     }
 }

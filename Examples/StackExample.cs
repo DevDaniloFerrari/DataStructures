@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataStructures.Examples
+﻿namespace DataStructures.Examples
 {
-    internal class StackExample
+    public class StackExample
     {
+        public string[] Stack { get; set; }
+
+        public StackExample(int size)
+        {
+            Stack = new string[size];
+        }
     }
 }

@@ -16,3 +16,17 @@ A Circular Linked List is a variation of a Singly or Doubly Linked List in which
 ![Circular Linked List](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Circularly-linked-list.svg/500px-Circularly-linked-list.svg.png)
 
 In summary, these three types of linked lists offer different trade-offs in terms of efficiency and functionality. Singly Linked Lists are simple and efficient for insertion and deletion at the beginning, Doubly Linked Lists provide bidirectional traversal and more flexibility, and Circular Linked Lists are used when you need continuous looping behavior. The choice of which to use depends on the specific requirements of your data and the operations you need to perform.
+
+# Stack Data Structure
+
+A **stack** is a fundamental data structure in computer science that follows the Last-In, First-Out (LIFO) principle. It operates like a collection of items stacked on top of each other, where the last item added is the first one to be removed. Think of it as a stack of items, such as plates or books.
+
+## Operations
+
+A stack supports the following main operations:
+
+- **Push**: Adds an item to the top of the stack.
+- **Pop**: Removes and returns the top item from the stack.
+- **Peek (or Top)**: Retrieves the top item without removing it.
+- **IsEmpty**: Checks if the stack is empty.
+- **Size (or Count)**: Returns the number of items in the stack.

@@ -6,6 +6,12 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
+            LinkedListExample();
+            StackExample();
+        }
+
+        public static void LinkedListExample()
+        {
             var browserService = new BrowserService();
 
             browserService.NavigateTo("youtube");
@@ -34,6 +40,11 @@ namespace DataStructures
             browserService.Forward();
 
             Console.WriteLine(browserService.GetCurrentPage()); //azure
+        }
+
+        public static void StackExample()
+        {
+
         }
     }
 }
